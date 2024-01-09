@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: rgb(243, 81, 69);
+    width: 100%;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .box-container{
+    display: flex;
+    margin-left: 40px;
+    gap: 1.5rem;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    
+}
+.container .box-container .box{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;;
+    transition:  .5s ;
+
+}
+.container .box-container .box img{
+    width: 100%;;
+    cursor: pointer;
+}
+.container .box-container .box .box-box{
+    background:rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    padding: 25px  15px;
+    /* height: 130px; ?*/
+    transition:  .5s;
+}
+.container .box-container .box .box-box .n_p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .box-container .box .box-box .n_p h1{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.container .box-container .box .box-box .n_p h2{
+    font-size: 20px;
+    color:rgb(240, 71, 59);
+    font-weight: bold;
+}
+.container .box-container .box .box-box p{
+    font-size: 17px;
+    color: rgb(99, 99, 99);
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+.container .box-container .box .box-box button{
+    padding: 11px 35px;
+    outline: none;
+    border: 2px solid rgb(243, 81, 69);
+    color:rgb(243, 81, 69);
+    text-align: center;
+    background: #fff;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.container .box-container .box .box-box button:nth-child(2){
+    margin-left: 10px;
+    background: rgb(243, 81, 69);
+}
+.container .box-container .box:hover .box-box{
+    position: absolute;
+    bottom: 0;
+}
+.butbnt{
+    background: black;
+}
+.container .box-container .box img:hover{
+    transform: scale(1.10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
